@@ -35,7 +35,7 @@
 					<td>${contact.address}</td>
 					
 					<td>
-						<fmt:formatDate value="${contact.dateOfBirth.time}" pattern="dd/MM/yyyy" />
+						<fmt:formatDate value="${contact.dateOfBirth.time}" pattern="dd/mm/yyyy" />
 					</td>
 				</tr>
 			</c:forEach>
