@@ -22,7 +22,7 @@
 
         <form action="addContact" method="POST">
            
-            <vnuk:myNameField name="name" id="name" label="Name Me"/>
+            <vnuk:myNameField name="name" id="name" label="Name"/>
             <vnuk:myNameField name="address" id="address" label="Address"/>
             <vnuk:myNameField name="email" id="email" label="E-mail"/>
             <vnuk:myDateField name="date_of_birth" id="date-of-birth" label="Date of birth"/>
