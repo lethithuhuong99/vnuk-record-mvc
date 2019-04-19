@@ -13,7 +13,7 @@
 		<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 		<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 		<c:import url="header.jsp" />
-		<h1>Contact ${contact.name} successfully added!</h1>
+		<h1>Contact ${param.name} successfully added!</h1>
 		<div>
 			<a href="http://localhost:8080/vnuk-record-mvc/read-contacts.jsp">
 				Return !
