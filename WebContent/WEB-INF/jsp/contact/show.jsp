@@ -43,8 +43,8 @@
 				</td>
 				
 				<td>
-					<a href="mvc?action=contact.Index" class="btn btn-xs btn-success" style="background-color:white; color:black ">Return</a>
-					<a href="mvc?action=contact.Update&id=${myContact.id}" class="btn btn-xs btn-success">Update</a>				
+					<a href="mvc?action=contact.Index" class="btn btn-xs btn-success" id = "return"> Return</a>
+					<a href="mvc?action=contact.Update&id=${myContact.id}" class="btn btn-xs btn-success" id = "update">Update</a>				
 				</td>
 						
 			</tr>

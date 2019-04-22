@@ -16,6 +16,7 @@ public class Delete implements Action{
 		Contact myContact = new ContactDao().read(id);
 		ContactDao contactDao = new ContactDao();
 		contactDao.delete(myContact);
-		return "/WEB-INF/jsp/contact/delete.jsp";
+		request.setAttribute("myContacts",new ContactDao().read());
+		return "/WEB-INF/jsp/contact/index.jsp";
 	}
 }

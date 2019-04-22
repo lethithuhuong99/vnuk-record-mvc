@@ -23,3 +23,18 @@ th{
   text-align: center;
   background-color: #79FFAF;
 }
+
+
+#show {
+	background-color: white;
+	color: black;
+}
+
+#return {
+	background-color: white;
+	color: black;
+}
+
+#update {
+	background-color: blue;
+}

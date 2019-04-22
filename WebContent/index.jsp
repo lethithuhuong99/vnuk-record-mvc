@@ -1,5 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-
+<head>
 	<head>
 		<title>Project vnuk-record</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -8,26 +11,12 @@
 	
 	<body>
 	
-		
-		
 		<div>
 			<a href="http://localhost:8080/vnuk-record-mvc/test-connection">
 				Test your connection
 			</a>
 		</div>
 
-		<div>
-			<a href="http://localhost:8080/vnuk-record-mvc/read-contacts.jsp">
-				Read all contacts through JSTL
-			</a>
-		</div>
-		
-		<div>
-			<a href="http://localhost:8080/vnuk-record-mvc/add-contact.jsp">
-				Add a new contact (JSP)
-			</a>
-		</div>
-		
 		<div>
 			<a href="http://localhost:8080/vnuk-record-mvc/mvc?action=FirstAction">
 				My first action!
@@ -39,7 +28,5 @@
 				My contact index!
 			</a>
 		</div>
-				
-	</body>
-	
+</body>
 </html>

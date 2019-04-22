@@ -100,7 +100,14 @@ public class UpdateContactServlet extends HttpServlet {
 		
 		// 	display name of the new contact
 		
-		RequestDispatcher requesDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/contact/contact-updated.jsp");
+		try {
+			request.setAttribute("myContacts",new ContactDao().read());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		RequestDispatcher requesDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/contact/index.jsp");
 		requesDispatcher.forward(request,response);
 		
 	}

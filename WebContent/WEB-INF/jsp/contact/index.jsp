@@ -44,8 +44,8 @@
 					</td>
 					
 					<td>
-					    <a href="mvc?action=contact.Show&id=${contact.id}" class="btn btn-xs btn-default">Show</a>
-					    <a href="mvc?action=contact.Update&id=${contact.id}" class="btn btn-xs btn-success">Update</a>
+					    <a href="mvc?action=contact.Show&id=${contact.id}" class="btn btn-xs btn-default" id="show">Show</a>
+					    <a href="mvc?action=contact.Update&id=${contact.id}" class="btn btn-xs btn-success" id = "update">Update</a>
 						<a href="mvc?action=contact.Delete&id=${contact.id}" class="btn btn-xs btn-danger">Delete</a>
 					</td>
 							
@@ -54,7 +54,7 @@
 
 		</table>
 
-		<a href="mvc?action=contact.Create" class="btn btn-success" style="color:black">Create a new contact</a>	
+		<a href="mvc?action=contact.Create" class="btn btn-success">Create a new contact</a>	
 		<c:import url="footer.jsp" />
 	</body>
 </html>
