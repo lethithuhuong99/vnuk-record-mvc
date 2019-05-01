@@ -1,26 +1,17 @@
-<%@ page language="java"
-	contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"
-%>
+<%-- 
+    Document   : contact-added
+    Created on : Mar 31, 2017, 7:35:44 AM
+    Author     : michel
+--%>
 
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-	</head>
-
-	<body>
-		<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-		<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-		
-		<c:import url="header.jsp" />
-		<h1>Contact ${param.name} successfully added!</h1>
-		<div>
-			<a href="mvc?action=contact.Index" class="btn btn-success">
-				Return to the INDEX view !
-			</a>
-		</div>
-		<c:import url="footer.jsp" />
-	</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Contact ${param.name} added</title>
+    </head>
+    <body>
+        ${param.name} has successfully been added.
+    </body>
 </html>

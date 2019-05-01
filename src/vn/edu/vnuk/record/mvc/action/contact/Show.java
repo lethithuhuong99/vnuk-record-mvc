@@ -1,4 +1,11 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package vn.edu.vnuk.record.mvc.action.contact;
+
+import java.sql.Connection;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -6,15 +13,24 @@ import javax.servlet.http.HttpServletResponse;
 import vn.edu.vnuk.record.mvc.action.Action;
 import vn.edu.vnuk.record.mvc.dao.ContactDao;
 
-public class Show implements Action{
+/**
+ *
+ * @author michel
+ */
+public class Show implements Action {
 
-	@Override
-	public String run(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String idInStringFormat = request.getParameter("id");
-		Long id = Long.parseLong(idInStringFormat);
-		
-		request.setAttribute("myContact",new ContactDao().read(id));
-		
-		return "/WEB-INF/jsp/contact/show.jsp";
-	}
+    @Override
+    public String run(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        request.setAttribute(
+        	"contact",
+        	
+        	new ContactDao(
+        			(Connection) request.getAttribute("myConnection")
+        		).read(Long.parseLong(request.getParameter("id")))
+    	);
+        
+        return "/WEB-INF/jsp/contact/show.jsp";
+    }
+    
 }
